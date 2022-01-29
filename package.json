@@ -1,0 +1,13 @@
+{
+  "name": "3-column-preview-card-component-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "TheArkhamKnight781526 <thearkhamknight781526@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx sass SCSS:css"
+  },
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
+}

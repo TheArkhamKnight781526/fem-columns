@@ -1,0 +1,96 @@
+@import "_variables";
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+
+  width: 100%;
+
+  max-width: 1440px;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 48px;
+    width: 100%;
+
+    @include desktop {
+      max-width: 307px;
+    }
+
+    &#card-1 {
+      background: $card-1-bg;
+
+      @include desktop {
+        border-radius: 8px 0 0 8px;
+      }
+
+      .card-button {
+        color: $card-1-bg;
+      }
+    }
+
+    &#card-2 {
+      background: $card-2-bg;
+
+      .card-button {
+        color: $card-2-bg;
+      }
+    }
+
+    &#card-3 {
+      background: $card-3-bg;
+
+      @include desktop {
+        border-radius: 0 8px 8px 0;
+      }
+
+      .card-button {
+        color: $card-3-bg;
+      }
+    }
+
+    .card-image {
+      margin-bottom: 35px;
+    }
+
+    .card-title {
+      font-family: "Big Shoulders Display";
+      font-size: 40px;
+      text-transform: uppercase;
+      color: $light-grey;
+      margin-bottom: 25px;
+    }
+
+    .card-body {
+      color: $transparent-white;
+      line-height: 25px;
+      margin-bottom: 25px;
+
+      @include desktop {
+        margin-bottom: 83px;
+      }
+    }
+
+    .card-button {
+      display: inline-block;
+      padding: 11.5px 31.5px;
+      text-decoration: none;
+      background: white;
+      border-radius: 31.5px;
+      border: 2px solid transparent;
+
+      &:hover {
+        border-color: $light-grey;
+        background: transparent;
+        color: white !important;
+      }
+    }
+  }
+}
